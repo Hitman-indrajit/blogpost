@@ -110,15 +110,19 @@
   }
 
   .pink-container {
-    @apply w-full min-h-[530px] items-center flex-col;
+    @apply w-full bg-pink-500 items-center flex-col;
   }
 
   .sub-heading {
     @apply font-medium text-[20px] text-white bg-pink-500 text-center break-words;
+  }  
+
+  .form-containe{
+    @apply flex items-center justify-center w-full;
   }
 
   .form-default {
-    @apply bg-white border-4 border-black rounded-lg p-6 space-y-4 max-w-2xl w-full;
+    @apply bg-pink-500 border-black max-w-2xl p-6 space-y-4 w-full;
   }
 
   .form-default .form-label {
@@ -138,7 +142,7 @@
   }
 
   .form-default .form-submit {
-    @apply bg-pink-600 text-white font-bold px-6 py-3 rounded-full border-4 border-black hover:opacity-95 transition;
+    @apply bg-pink-600 text-white font-bold mx-3 px-6 py-3 rounded-full border-4 border-black hover:opacity-95 transition;
   }
 
   /* .flex-between {

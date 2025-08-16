@@ -4,11 +4,11 @@ import SearchFormReset from "./SearchFormReset";
 
 const SearchForm = ({ query }: { query?: string }) => {
   return (
-    <div className="flex items-center justify-center">
+    <div className="form-containe">
       <Form
         action="/"
         scroll={false}
-        className="form-default flex items-center gap-2"
+        className="form-default flex items-center"
       >
         <input
           type="text"
