@@ -45,15 +45,39 @@
   }
 
   .heading {
-    @apply uppercase bg-black px-6 py-3 font-extrabold text-white text-center;
+    @apply uppercase bg-pink-500 py-3 font-extrabold text-white text-center;
   }
 
   .pink-container {
-    @apply w-full min-h-[530px] bg-zinc-400 items-center flex-col py-10 px-6;
+    @apply w-full min-h-[530px] items-center flex-col;
   }
 
   .sub-heading {
-    @apply font-medium text-[20px] text-white max-w-2xl text-center break-words;
+    @apply font-medium text-[20px] text-white bg-pink-500 text-center break-words;
+  }
+
+  .form-default {
+    @apply bg-white border-4 border-black rounded-lg p-6 space-y-4 max-w-2xl w-full;
+  }
+
+  .form-default .form-label {
+    @apply block mb-2 font-medium text-sm text-black;
+  }
+
+  .form-default .form-input,
+  .form-default .form-textarea,
+  .form-default select {
+    @apply w-full border-2 border-black px-4 py-3 rounded-md text-black placeholder-gray-400 bg-white;
+  }
+
+  .form-default .form-input:focus,
+  .form-default .form-textarea:focus,
+  .form-default select:focus {
+    @apply outline-none ring-2 ring-pink-400/30;
+  }
+
+  .form-default .form-submit {
+    @apply bg-pink-600 text-white font-bold px-6 py-3 rounded-full border-4 border-black hover:opacity-95 transition;
   }
 
   /* .flex-between {
